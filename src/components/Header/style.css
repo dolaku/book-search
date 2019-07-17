@@ -1,3 +1,13 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#carouselBooks {
+    margin-top: 55px;
+}
+
 #carouselBooks img {
     filter: brightness(0.6);
     height: 200px;
