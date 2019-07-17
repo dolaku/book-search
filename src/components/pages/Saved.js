@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Result from '../Result/index'
 
 class Search extends Component {
   render() {
     return (
-      <div className="mb-auto">
+      <div>
         <h2>Saved</h2>
+        <Result />
+        <Result />
+        <Result />
       </div>
     );
   }

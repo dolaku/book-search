@@ -12,11 +12,15 @@ class App extends Component {
       <Router>
         <div className="App">
           <Header />
-          <Switch>
-            <Route exact path="/" component={Search} />
-            <Route exact path="/search" component={Search} />
-            <Route exact path="/saved" component={Saved} />
-          </Switch>
+
+          <div className="container mb-auto">
+            <Switch>
+              <Route exact path="/" component={Search} />
+              <Route exact path="/search" component={Search} />
+              <Route exact path="/saved" component={Saved} />
+            </Switch>
+          </div>
+
           <Footer />
         </div>
       </Router>

@@ -1,0 +1,24 @@
+import React, { Component } from 'react';
+
+class Result extends Component {
+    render() {
+        return (
+            <div className="mb-3">
+                <div class="card text-left">
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="https://picsum.photos/id/1032/200/200" class="align-self-start mr-3" alt="..." />
+                            <div class="media-body">
+                                <h5 class="mt-0">Top-aligned media</h5>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Result;

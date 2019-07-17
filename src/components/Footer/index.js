@@ -3,7 +3,7 @@ import React from "react";
 import './style.css'
 
 const Footer = () => (
-    <footer className="pt-3">
+    <footer className="pt-3 mt-4">
         <div className="d-flex flex-column justify-content-center align-items-center">
             <h5><a href="https://dolaku.github.io/" target="_blank" rel="noopener noreferrer">Donna Kuang</a></h5>
             <a className="link-email" href="mailto:dolaku@gmail.com">dolaku@gmail.com</a>
