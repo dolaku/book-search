@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Result from '../Result/index'
 
-class Search extends Component {
+class Saved extends Component {
   render() {
     return (
       <div>
@@ -14,4 +14,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default Saved;

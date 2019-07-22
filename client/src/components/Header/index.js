@@ -1,46 +1,47 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 class Header extends Component {
     render() {
         return (
             <div className="mb-4">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="/">Google Books</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <a className="navbar-brand" href="/">Google Books</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/search">Search</a>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link className={window.location.pathname === "/" ? "nav-link active" : "nav-link"} to="/">Search</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/saved">Saved</a>
+                            <li className="nav-item">
+                                <Link className={window.location.pathname === "/" ? "nav-link active" : "nav-link"} to="/saved">Saved</Link>
                             </li>
                         </ul>
                     </div>
                 </nav>
 
-                <div id="carouselBooks" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/images/book-fanned.jpg" class="d-block w-100" alt="Slide 1" />
+                <div id="carouselBooks" className="carousel slide" data-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img src="./assets/images/book-fanned.jpg" className="d-block w-100" alt="Slide 1" />
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/images/book-stack.jpg" class="d-block w-100" alt="Slide 2" />
+                        <div className="carousel-item">
+                            <img src="./assets/images/book-stack.jpg" className="d-block w-100" alt="Slide 2" />
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/images/book-shelves.jpg" class="d-block w-100" alt="Slide 3" />
+                        <div className="carousel-item">
+                            <img src="./assets/images/book-shelves.jpg" className="d-block w-100" alt="Slide 3" />
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselBooks" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                    <a className="carousel-control-prev" href="#carouselBooks" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselBooks" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                    <a className="carousel-control-next" href="#carouselBooks" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
                     </a>
                     <div className="sliderHead">
                         <h2 className="heading">(React) Google Books Search</h2>
